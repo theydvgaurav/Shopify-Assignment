@@ -12,7 +12,6 @@ const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.DB_ACCESS, () => { console.log('DB Connected') })
 
-
 app.use(express.json())
 app.use(cors())
 app.use('/', routes)
